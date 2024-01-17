@@ -1,0 +1,62 @@
+/* basic cart CSS */
+#discount {
+  /* color:white; */
+  height: 25px;
+  text-align: center;
+  width: 200px; /* Set the width of the container div */
+  overflow: hidden; /* Hide any overflowing content */
+  width: 100%;
+  background-color: #73cdc1;
+}
+
+#billContainer {
+  border: 1px solid gray;
+}
+
+#totalItems {
+  width: 50%; 
+  text-align: center;
+}
+
+#totalAmount {
+  width: 50%; 
+  text-align: center;
+}
+
+#billAmount {
+  text-align: right;
+  margin-right: 2rem;
+}
+
+#couponId {
+  width: 40%; 
+  height: 30px; 
+  text-align: center; 
+  margin-right: 20px;
+}
+
+#couponBtn {
+  background-color: #0bad98; 
+  width: 30%;
+  height: 30px; 
+  text-align: center; 
+  border: none; 
+  cursor: pointer;
+}
+
+.marquee {
+  display: inline-block;
+  font-weight: 500;
+  white-space: nowrap; /* Prevent line breaks */
+  animation: marquee 15s linear infinite; /* Run the marquee animation continuously */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left */
+  }
+}
+

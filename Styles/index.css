@@ -1,0 +1,136 @@
+/* navbar CSS */
+* {
+  font-family: "PT Sans", sans-serif;
+}
+
+nav > div > h1,
+nav > div > h3 {
+  margin-left: 20px;
+}
+nav {
+  height: 60px;
+  width: 100%;
+  font-size: larger;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  font-size: 25px;
+}
+
+nav > div > div {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#signUpContainer, #loginContainer {
+  width: 500px;
+  margin: 100px auto;
+}
+
+#signUpContainer > h1, #loginContainer > h1 {
+  text-align: center;
+}
+
+#signUpContainer form , #loginContainer form {
+  text-align: right;
+}
+
+#signUpContainer input, button, #loginContainer input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+#signUpContainer a, #loginContainer a {
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#loginContainer button, #signUpContainer button {
+  cursor: pointer;
+}
+
+#bodyCareContainer, #hairCareContainer, #faceCareContainer, #cartContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#bodyCareContainer > div, 
+#hairCareContainer > div,
+#faceCareContainer > div,
+#cartContainer > div{
+  width: 23%;
+  height: 530px;
+  box-sizing: border-box; 
+  padding: 10px;
+  box-shadow: 3px 3px 10px #ddd;
+  margin: 10px; 
+  position: relative;
+}
+
+#bodyCareContainer > div > div, 
+#hairCareContainer > div > div,
+#faceCareContainer > div > div,
+#cartContainer > div > div{
+  display: flex;
+  width: 100%;
+}
+
+#bodyCareContainer > div > div > p,
+#hairCareContainer > div > div > p,
+#faceCareContainer > div > div > p,
+#cartContainer > div > div > p{
+  width: 50%;
+  text-align: center;
+}
+
+#bodyCareContainer > div > div > p:nth-child(2),
+#hairCareContainer > div > div > p:nth-child(2),
+#faceCareContainer > div > div > p:nth-child(2),
+#cartContainer > div > div > p:nth-child(2){
+  text-decoration: line-through;
+}
+
+#bodyCareContainer button,
+#hairCareContainer button,
+#faceCareContainer button,
+#cartContainer button {
+  background-color: 80CE80;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10;
+  width: 95%;
+}
+
+#cartContainer button{
+  background-color: DC7171;
+}
+
+#bodyCareContainer button:hover,
+#hairCareContainer button:hover,
+#faceCareContainer button:hover,
+#cartContainer button:hover{
+  border: 2px solid purple;
+}
+
+
+
+
